@@ -1,0 +1,375 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #faf5ef;
+    color: #030303;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 5rem 3rem;
+  }
+  
+  .btn {
+    margin-top: 1.2rem;
+    display: inline-block;
+    background-color: #00bd29;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 1.25rem 4.5rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  
+  /* NAVIGATION */
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    padding: 0 6rem;
+  }
+  
+  .nav__links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav__item {
+    margin-left: 4rem;
+  }
+  
+  .nav__link {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+  }
+  
+  .hover:hover {
+    color: #1f9c00;
+  }
+  
+  /* HEADER */
+  .header {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header__title {
+    margin-top: 1rem;
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    row-gap: 3rem;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 7rem;
+  }
+  
+  .header__img {
+    height: 500px;
+    width: 85%;
+    border-radius: 45%;
+    grid-column: 2/3;
+    grid-row: 1 / span 4;
+    transform: translateY(-4rem);
+  }
+  
+  h1 {
+    margin-top: 5rem;
+    font-size: 5.5rem;
+  }
+  
+  .header__title h2 {
+    margin-top: -8rem;
+    font-size: 3rem;
+  }
+  
+  .header__title h4 {
+    margin-top: -10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .btn--text {
+    display: inline-block;
+    border: none;
+    color: #00ca00;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 2px;
+    text-align: left;
+    background-color: #faf5ef;
+    width: 40rem;
+    margin-top: -13rem;
+  }
+  
+  .highlight {
+    color: #3ba000;
+  }
+  
+  /* MAIN */
+  
+  .section__title {
+    margin-top: 3rem;
+    text-align: center;
+    color: #00b427;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    margin: 3rem 12rem;
+  }
+  
+  .section__description {
+    margin: auto;
+    font-size: 1.8rem;
+  }
+  
+  .vertical {
+    border-left: 1px solid #e1cbb1;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .features__body p {
+    font-size: 1.4rem;
+  }
+  
+  .features__list li {
+    list-style: none;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .features__list li::before {
+    content: "✓";
+    color: rgb(0, 175, 53);
+    font-weight: 700;
+    padding: 1rem;
+  }
+  
+  .btn--big {
+    background-color: #00b94d;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 25%;
+    height: 6rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  
+  .btn--big a {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  footer {
+    border-top: 1px solid #82db7f;
+    margin: 4rem 0;
+  }
+  
+  .social_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2.4rem;
+    cursor: pointer;
+  }
+  
+  .fa {
+    height: 1.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: #229200;
+    padding: 1.5rem;
+  }
+  
+  .footer_text {
+    color: #000000;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  /* CONTACT PAGE */
+  #section {
+    margin-top: -2rem;
+  }
+  
+  .contact-section {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.6rem;
+    width: 35%;
+    margin: auto;
+  }
+  
+  .form-content {
+    margin: 3rem;
+  }
+  
+  .form-header {
+    background-color: #f8f2e9;
+    padding: 2.5rem;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: #00700f;
+  }
+  
+  input {
+    width: 95%;
+    margin-bottom: 2.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #19d600;
+    border-radius: 0.4rem;
+  }
+  
+  textarea {
+    width: 95%;
+    border: 2px solid #19d600;
+    padding: 0.8rem 1.2rem;
+    min-height: 10rem;
+    border-radius: 0.4rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  .submit-btn {
+    background-color: #19d600;
+    color: #faf5ef;
+    width: 95%;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+  
+  /* REGISTRATION PAGE */
+  .reg-form {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.8rem;
+    row-gap: 1.6rem;
+    padding: 2.4rem 2.4rem 2.4rem;
+  }
+  
+  .contact-section--register {
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.6rem;
+  }
+  
+  select {
+    width: 95%;
+    margin-bottom: 2.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #19d600;
+    border-radius: 0.4rem;
+  }
+  
+  .submit-reg-btn {
+    background-color: #19d600;
+    color: #ffffff;
+    width: 80%;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  /* MEDIA QUERIES */
+  @media screen and (max-width: 140px) {
+    .header__img {
+      height: 620px;
+      width: 90%;
+    }
+  
+    h1 {
+      margin-top: 5rem;
+      font-size: 7.8rem;
+    }
+  
+    .header__title h2 {
+      margin-top: -9rem;
+      font-size: 5rem;
+    }
+  
+    .header__title h4 {
+      font-size: 2.2rem;
+    }
+  
+    .btn--text {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .header__img {
+      height: 500px;
+      width: 85%;
+    }
+  
+    h1 {
+      font-size: 5.5rem;
+    }
+  
+    .header__title h2 {
+      margin-top: -8rem;
+      font-size: 3rem;
+    }
+  
+    .header__title h4 {
+      font-size: 1.5rem;
+    }
+  
+    .btn--text {
+      font-size: 1.8rem;
+    }
+  
+    .section__title {
+      font-size: 5rem;
+    }
+  }
